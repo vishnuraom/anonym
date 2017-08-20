@@ -1,0 +1,21 @@
+{
+  "name": "anonym",
+  "version": "1.0.0",
+  "description": "fcm",
+  "main": "fcm.js",
+  "scripts": {
+    "test": "node fcm"
+  },
+  "keywords": [
+    "fcm"
+  ],
+  "author": "vishnuraom",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "node-gcm": "^0.14.6",
+    "pug": "^2.0.0-rc.3"
+  }
+}

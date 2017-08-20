@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    title anonym
+    script(type='text/javascript').
+      function sendrequest() {
+      var msgcon = document.getElementById("inp");
+      var url = "https://anonym.herokuapp.com/msg";
+      var params = "content="+msgcon.value;
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", url, true);
+      //Send the proper header information along with the request
+      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhr.send(params);
+      msgcon.value='';
+      };
+  body
+    h1 anonym-github.com/vishnuraom
+    #container.col
+      p You are amazing!
+      p
+        | Send me an anonymous message.
+      input#inp(type='textbox')
+      input#sub(type='button', onclick='sendrequest()',value='Submit')
